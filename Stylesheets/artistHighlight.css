@@ -1,0 +1,171 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    margin-left: 25%;
+    max-width: 1200px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Set minimum height of the body to 100% of the viewport height */
+    background-image: url('/img/dj-equipment-dark-room-with-purple-lights.jpg');
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    overflow-x: hidden;
+    color:#fff;
+    
+}
+
+/* Basic styling for header */
+header {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-family: "pf-fuel-decay", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 80px;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #000000; /* Adjust background color as needed */
+    padding: 20px;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    display: block; /* Change to inline-block */
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px; /* Adjust padding as needed */
+    transition: background-color 0.3s ease;
+    writing-mode: vertical-rl; /* Set writing mode to vertical right-to-left */
+    text-orientation: mixed; /* Allow upright text */
+    white-space: nowrap; /* Prevent text wrapping*/
+    font-size: 40px;
+    font-family: "pf-fuel-decay", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 20px 0;
+}
+
+#navbar li a:hover {
+    color: #c60d6e; /* Adjust hover background color as needed */
+}
+
+/*mobile hamburger menu*/
+.navbar-toggle {
+    display: none; /* Hide by default on desktop */
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff; /* Hamburger icon color */
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+.navbar-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-menu li {
+    margin-bottom: 10px;
+}
+
+.navbar-menu li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.mosdef{
+    text-align: center;
+    background-color: rgba(1, 1, 1, 0.79); /* Semi-transparent white background */
+    border-radius: 10px;
+    padding: 20px;
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    box-shadow: 0 4px 8px 0 rgba(49, 49, 49, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 0 auto;
+}
+
+.mosdef h2{
+    font-family: "pf-fuel-decay", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.mosdef p{
+    font-family: "forma-djr-display", sans-serif;
+    font-weight: 40;
+    font-style: normal;
+    margin-top: 15px;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+/* Basic styling for footer */
+footer {
+    background-color: #010101;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+
+/* Media query for mobile */
+@media screen and (max-width: 768px) {
+    .navbar-toggle {
+        display: block; /* Show on mobile */
+    }
+    .navbar-menu {
+        display: none; /* Hide by default on mobile */
+    }
+    .navbar-menu.show {
+        display: block; /* Show when menu is toggled */
+    }
+    header h1{
+        font-size: 50px;
+    }
+    .mosdef{
+        max-width: 50%;
+    }
+    .mosdef img{
+        max-width: 80%;
+    }
+}

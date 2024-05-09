@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | About the Music</title>
+    <link rel="stylesheet" href="Stylesheets/styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/zct0jaf.css">
+    <link rel="stylesheet" href="https://use.typekit.net/zct0jaf.css">
+    
+</head>
+<body>
+    <header>
+        <h1>About the Music</h1>
+        <nav id="navbar">
+            <div class="navbar-toggle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="navbar-menu" id="navbarMenu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#aboutSection">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#podcast">Podcast</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="grid-container">
+            <div class="grid-item wide-grid-item">
+                <div class="video-container">
+                    <video id="video1" controls autoplay muted loop >
+                        <source src="videos/Kendrick v Drake Rap Battle.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
+            <div class="grid-item puzzle-container">
+                <h1>Who's the Artist?</h1>
+                <p id="clue"></p>
+                <div id="puzzle" class="puzzle"></div>
+                <button id="guessButton">Submit Guess</button>
+                <p id="message"></p>
+                <p id="correctAnswer" style="display: none;">The correct answer is: <span id="answer"></span></p>
+            </div>
+
+            <div class="grid-item blogPost1">
+                <h2></h2>
+                <img src="" alt="">
+                <p>Description of the post 3.</p>
+                <a href="full-post.html">Read More</a>
+            </div>
+
+            <div class="grid-item blogPost2">
+                <h2>Post Title 4</h2>
+                <img src="" alt="">
+                <p>Description of the post 4.</p>
+                <a href="full-post1.html">Read More</a>
+            </div>
+
+            <div class="grid-item blogPost3">
+                <h2>Post Title 5</h2>
+                <img src="" alt="">
+                <p>Description of the post 5.</p>
+                <a href="full-post2.html">Read More</a>
+            </div>
+
+            <div class="grid-item blogPost4" id="concerts-grid">
+                <h2>TOUR DATES | CONCERTS | TOUR DATES | TOURS | CONCERTS</h3>
+            </div>
+
+            <div class="grid-item blogPost5">
+                <h2>Who I'm Listening to</h2>
+                <a href="artistHighlight1.html" target="_blank" class="image-link">
+                    <img src="img/mosdefumisays.jpg">
+                </a>
+                <a href="">
+                    <img src="img/pmdawn.jpg">
+                </a>
+                <a href="">
+                    <img src="img/sade.webp">
+                </a>
+            </div>
+
+            <div class="grid-item blogPost6" id="aboutSection">
+                <h2>What is About the Music?</h2>
+                <p>Music has been a big part of my life. There's a song connected to every special moment in my life - 1st break up...there's a song for that. The day of my High School graduation....I have a song for that. Music truly creates a soundtrack for our lives and as time goes on and memories fade it's those special songs that can pull those lost memories back to the forefront of our minds and put us right back in that moment.</p><br>
+                <p>I created About the Music as a place to celebrate and remember those artists and songs that created the soundtrack to those special life moments</p>
+            </div>
+
+            <div class="grid-item blogPost7" id="podcast">
+                <h2>PODCAST</h2>
+                <P>Did you know About the Music has a podcast??<br>
+                Listen in as I share my thoughts about current music topics.<br>
+                If you like what you hear, join the Patreon and get access to all episodes.</P>
+                <a href="patreon.com/AbouttheMusicPodcast">About the Music Patreon</a>
+                <audio controls>
+                    <source src="enter the episode.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="grid-item blogPost8">
+                <h2>Crazy Bear Music</h2>
+                <img src="img/crazyBear.png">
+                <p>Checkout the music I make with Ai!<br>
+                I write the lyrics and Ai does the rest.</p>
+                <audio id="musicPlayer" controls autoplay muted>
+                    <source src="music/One More Time.mp3" type="audio/mpeg">
+                </audio>
+                <p>Like what you hear? Subscribe to Crazy Bear Music for more!</p>
+                <a href="https://www.youtube.com/channel/UCw7qeCKxOYjcYuyXM6pWQWg">Crazy Bear Music</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 About the Music. All rights reserved.</p>
+    </footer>
+    <script src="Scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,380 @@
+
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    margin-left: 25%;
+    max-width: 1200px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Set minimum height of the body to 100% of the viewport height */
+    background-image: url('/img/dj-equipment-dark-room-with-purple-lights.jpg');
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    overflow-x: hidden;
+    color:#fff;
+}
+
+
+
+/* Basic styling for header */
+header {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-family: "pf-fuel-decay", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 80px;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #000000; /* Adjust background color as needed */
+    padding: 20px;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    display: block; /* Change to inline-block */
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px; /* Adjust padding as needed */
+    transition: background-color 0.3s ease;
+    writing-mode: vertical-rl; /* Set writing mode to vertical right-to-left */
+    text-orientation: mixed; /* Allow upright text */
+    white-space: nowrap; /* Prevent text wrapping*/
+    font-size: 40px;
+    font-family: "pf-fuel-decay", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 20px 0;
+}
+
+#navbar li a:hover {
+    color: #c60d6e; /* Adjust hover background color as needed */
+}
+
+/* Basic styling for main content */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 1rem;
+    padding: 20px;
+}
+
+.grid-item {
+    border: none;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item img{
+    width: 150px;
+    height: 150px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Aspect ratio: 16:9 */
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+/* Standard video size */
+.grid-item.wide-grid-item .video-container {
+    max-width: 880px; /* Set the maximum width to 880px */
+}
+
+.grid-item.wide-grid-item{
+    align-self: center;
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.grid-item h1{
+    font-family: "pf-fuel-decay", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.grid-item h2{
+    font-family: "pf-fuel-decay", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.grid-item p{
+    font-family: "forma-djr-display", sans-serif;
+    font-weight: 40;
+    font-style: normal;
+    margin-top: 15px;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.blogPost6 p{
+    max-width: 45%;
+    margin: 0 auto;
+}
+
+/* Make one grid item wider */
+.wide-grid-item {
+    grid-column: span 2; /* This will span two columns */
+}
+
+.blogPost4{
+    grid-column: span 1;
+}
+.blogPost5 {
+    grid-column: span 2;
+}
+.blogPost6 {
+    grid-column: span 3;
+}
+.blogPost7 {
+    grid-column: span 2;
+}
+
+.blogPost7{
+    display: flex;
+    flex-direction: column;
+}
+.blogPost7 audio{
+    margin: 5% auto;
+}
+
+#puzzle {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center; /* Align children horizontally */
+}
+
+#clue{
+    margin-bottom: 25px;
+}
+
+.puzzle-container{
+    text-align: center;
+    background-color: rgba(1, 1, 1, 0.79); /* Semi-transparent white background */
+    border-radius: 10px;
+    padding: 20px;
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 28vh; /* Set container height to viewport height */
+    
+}
+
+.blogPost1,
+.blogPost2,
+.blogPost3,
+.blogPost4,
+.blogPost5,
+.blogPost6,
+.blogPost7,
+.blogPost8 {
+    text-align: center;
+    background-color: rgba(1, 1, 1, 0.79); /* Semi-transparent white background */
+    border-radius: 10px;
+    padding: 20px;
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    box-shadow: 0 4px 8px 0 rgba(49, 49, 49, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.blogPost8 p,
+.blogPost7 p{
+    margin: 5% 0;
+    letter-spacing: 2px;
+}
+
+
+.blogPost5 img{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(153, 150, 150, 0.2), 0 6px 20px 0 rgba(251, 249, 249, 0.19);
+    transition: transform 0.3s;
+}
+.blogPost5 img:hover{
+    transform: scale(1.5);
+}
+
+input {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin: 2px;
+}
+
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/*.concert-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}*/
+
+#concerts-grid {
+    height: 200px; /* Adjust height as needed */
+    overflow-y: auto; /* Enable vertical scrolling */
+    position: relative;
+}
+#concerts-grid h2{
+    background-color: #080808; /* Adjust as needed */
+    margin-right: 10px; /* Adjust margin as needed */
+    white-space: nowrap; /* Prevent text wrapping */
+    writing-mode: vertical-rl; /* Set vertical writing mode */
+    text-orientation: upright;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+#concerts-grid h3{
+    padding-left: 10px;
+    margin-top: 15px;
+}
+
+
+/* Basic styling for footer */
+footer {
+    background-color: #010101;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+
+/*mobile hamburger menu*/
+.navbar-toggle {
+    display: none; /* Hide by default on desktop */
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff; /* Hamburger icon color */
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+.navbar-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-menu li {
+    margin-bottom: 10px;
+}
+
+.navbar-menu li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Media query for mobile */
+@media screen and (max-width: 768px) {
+    .navbar-toggle {
+        display: block; /* Show on mobile */
+    }
+    .navbar-menu {
+        display: none; /* Hide by default on mobile */
+    }
+    .navbar-menu.show {
+        display: block; /* Show when menu is toggled */
+    }
+    header h1{
+        font-size: 50px;
+    }
+}
+
+
+
+
+/* Responsive styles for smaller screens (e.g., mobile) */
+@media screen and (max-width: 1024px){
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+    main {
+        margin-left: 8%;
+    }
+    .grid-item.wide-grid-item{
+        width: 95%;
+        border: none;
+    }
+}
+@media screen and (min-width: 1032px) and (max-width: 1200px){
+    main {
+        margin-left: 5%;
+    }
+}
